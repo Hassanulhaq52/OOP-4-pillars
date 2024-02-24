@@ -1,3 +1,5 @@
+// INHERITANCE
+
 // class GrandParent
 // {
 //   void grand_func()
@@ -22,6 +24,9 @@
 //     print('this is function2');
 //   }
 // }
+
+
+
 // class Mobile
 // {
 //   int Ram=4;
@@ -51,9 +56,15 @@
 //   }
 //
 // }
+
+// INHERITANCE
+
 import 'package:opp1/abs1.dart';
 
 import 'enc1.dart';
+
+
+// POLYMORPHISM
 
 class example {
   // void func1()
@@ -73,13 +84,14 @@ class example {
   // {
   //
   // }
-  @override
+
   void hassan() {
     print('parent');
   }
 }
 
 class example2 extends example {
+  // @override
   void hassan() {
     print('child');
   }
@@ -89,10 +101,23 @@ class example2 extends example {
   }
 }
 
+class example3 extends example {
+  @override
+  void hassan() {
+    print('class 3');
+  }
+
+  void parent_func() {
+    super.hassan();
+  }
+}
+// POLYMORPHISM
+
 void main() {
-  // var obj2=example2();
-  // obj2.hassan();
+  var obj2=example3();
+  obj2.hassan();
   // obj2.parent_func();
+
   // // Inheritence
   // // var obj1=Child();
   // // obj1.fun1();
