@@ -101,7 +101,7 @@ class example2 extends example {
   }
 }
 
-class example3 extends example {
+class example3 extends example2 {
   @override
   void hassan() {
     print('class 3');
@@ -114,14 +114,15 @@ class example3 extends example {
 // POLYMORPHISM
 
 void main() {
-  var obj2=example3();
-  obj2.hassan();
+  // var obj2=example3();
+  // obj2.hassan();
   // obj2.parent_func();
 
   // // Inheritence
   // // var obj1=Child();
   // // obj1.fun1();
-  // Dog obj3=Dog();
+  Dog obj3=Dog();
+  print(obj3.getAge());
   // print(obj3.getAge());
   // obj3.setAge(7);
   // print(obj3.getAge());
